@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BudgetBuddy.MainPage"
+             Title="Budget Dashboard"
+             Background="White">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <Label Text="Your Balance" 
+               FontSize="24" 
+               HorizontalOptions="Center" 
+               TextColor="DarkGreen"/>
+
+        <Label x:Name="BalanceLabel" 
+               Text="$0.00" 
+               FontSize="32" 
+               FontAttributes="Bold" 
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+
+        <Label Text="Recent Transactions" 
+               FontSize="18" 
+               FontAttributes="Bold" 
+               TextColor="Gray"/>
+
+        <CollectionView x:Name="TransactionsView" HeightRequest="200">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal" Padding="10" Spacing="10">
+                        <Label Text="{Binding Description}" FontSize="16" HorizontalOptions="StartAndExpand"/>
+                        <Label Text="{Binding Amount}" FontSize="16" HorizontalOptions="End"
+                               TextColor="{Binding Amount, Converter={StaticResource AmountColorConverter}}"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+            <Button Text="Add Income" BackgroundColor="Green" TextColor="White" Clicked="OnAddIncomeClicked"/>
+            <Button Text="Add Expense" BackgroundColor="Red" TextColor="White" Clicked="OnAddExpenseClicked"/>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
