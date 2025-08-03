@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage x:Class="BudgetBuddy.MainPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BudgetBuddy.MainPage"
              Title="Budget Dashboard"
-             Background="White">
+             BackgroundColor="White">
 
     <VerticalStackLayout Padding="20" Spacing="20">
 
@@ -29,8 +29,7 @@
                 <DataTemplate>
                     <StackLayout Orientation="Horizontal" Padding="10" Spacing="10">
                         <Label Text="{Binding Description}" FontSize="16" HorizontalOptions="StartAndExpand"/>
-                        <Label Text="{Binding Amount}" FontSize="16" HorizontalOptions="End"
-                               TextColor="{Binding Amount, Converter={StaticResource AmountColorConverter}}"/>
+                        <Label Text="{Binding Amount}" FontSize="16" HorizontalOptions="End"/>
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

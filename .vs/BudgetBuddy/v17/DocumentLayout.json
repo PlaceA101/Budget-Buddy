@@ -1,13 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\place\\BudgetBuddy\\",
+  "WorkspaceRootPath": "C:\\Users\\place\\hold this please\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E3D012E-3C58-4681-85B6-11761B035F32}|BudgetBuddy\\BudgetBuddy.csproj|c:\\users\\place\\budgetbuddy\\budgetbuddy\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0E3D012E-3C58-4681-85B6-11761B035F32}|BudgetBuddy\\BudgetBuddy.csproj|c:\\users\\place\\hold this please\\budgetbuddy\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3D012E-3C58-4681-85B6-11761B035F32}|BudgetBuddy\\BudgetBuddy.csproj|solutionrelative:budgetbuddy\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3D012E-3C58-4681-85B6-11761B035F32}|BudgetBuddy\\BudgetBuddy.csproj|c:\\users\\place\\hold this please\\budgetbuddy\\services\\transactiondatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3D012E-3C58-4681-85B6-11761B035F32}|BudgetBuddy\\BudgetBuddy.csproj|solutionrelative:budgetbuddy\\services\\transactiondatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3D012E-3C58-4681-85B6-11761B035F32}|BudgetBuddy\\BudgetBuddy.csproj|c:\\users\\place\\hold this please\\budgetbuddy\\services\\transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3D012E-3C58-4681-85B6-11761B035F32}|BudgetBuddy\\BudgetBuddy.csproj|solutionrelative:budgetbuddy\\services\\transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3D012E-3C58-4681-85B6-11761B035F32}|BudgetBuddy\\BudgetBuddy.csproj|c:\\users\\place\\hold this please\\budgetbuddy\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E3D012E-3C58-4681-85B6-11761B035F32}|BudgetBuddy\\BudgetBuddy.csproj|solutionrelative:budgetbuddy\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E3D012E-3C58-4681-85B6-11761B035F32}|BudgetBuddy\\BudgetBuddy.csproj|c:\\users\\place\\budgetbuddy\\budgetbuddy\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{0E3D012E-3C58-4681-85B6-11761B035F32}|BudgetBuddy\\BudgetBuddy.csproj|c:\\users\\place\\hold this please\\budgetbuddy\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0E3D012E-3C58-4681-85B6-11761B035F32}|BudgetBuddy\\BudgetBuddy.csproj|solutionrelative:budgetbuddy\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -23,28 +35,63 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\place\\BudgetBuddy\\BudgetBuddy\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "BudgetBuddy\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\place\\BudgetBuddy\\BudgetBuddy\\MainPage.xaml.cs",
-              "RelativeToolTip": "BudgetBuddy\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\place\\hold this please\\BudgetBuddy\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "BudgetBuddy\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\place\\hold this please\\BudgetBuddy\\MauiProgram.cs",
+              "RelativeToolTip": "BudgetBuddy\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T17:21:21.711Z",
+              "WhenOpened": "2025-08-03T19:03:12.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TransactionDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\place\\hold this please\\BudgetBuddy\\Services\\TransactionDatabase.cs",
+              "RelativeDocumentMoniker": "BudgetBuddy\\Services\\TransactionDatabase.cs",
+              "ToolTip": "C:\\Users\\place\\hold this please\\BudgetBuddy\\Services\\TransactionDatabase.cs",
+              "RelativeToolTip": "BudgetBuddy\\Services\\TransactionDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T19:00:53.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Transactions.cs",
+              "DocumentMoniker": "C:\\Users\\place\\hold this please\\BudgetBuddy\\Services\\Transactions.cs",
+              "RelativeDocumentMoniker": "BudgetBuddy\\Services\\Transactions.cs",
+              "ToolTip": "C:\\Users\\place\\hold this please\\BudgetBuddy\\Services\\Transactions.cs",
+              "RelativeToolTip": "BudgetBuddy\\Services\\Transactions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T19:00:46.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\place\\hold this please\\BudgetBuddy\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "BudgetBuddy\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\place\\hold this please\\BudgetBuddy\\MainPage.xaml.cs",
+              "RelativeToolTip": "BudgetBuddy\\MainPage.xaml.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAiwEEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T17:21:21.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\place\\BudgetBuddy\\BudgetBuddy\\MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\place\\hold this please\\BudgetBuddy\\MainPage.xaml",
               "RelativeDocumentMoniker": "BudgetBuddy\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\place\\BudgetBuddy\\BudgetBuddy\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\place\\hold this please\\BudgetBuddy\\MainPage.xaml",
               "RelativeToolTip": "BudgetBuddy\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-13T17:20:05.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T17:20:05.809Z"
             }
           ]
         }

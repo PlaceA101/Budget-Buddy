@@ -1,45 +1,69 @@
-﻿using System.Collections.ObjectModel;
+﻿using BudgetBuddy.Services;
+using System.Collections.ObjectModel;
+using System.Transactions;
 
-namespace BudgetBuddy
+namespace BudgetBuddy;
+
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage
+    private readonly TransactionDatabase _database;
+
+    private ObservableCollection<Transactions> transactions = new();
+    private decimal balance = 0;
+
+    public MainPage(TransactionDatabase database)
     {
-        private decimal balance = 0;
-        private ObservableCollection<Transaction> transactions = new();
+        InitializeComponent();
+        _database = database;
 
-        public MainPage()
+        TransactionsView.ItemsSource = transactions;
+    }
+
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        await LoadTransactions();
+    }
+
+    private async Task LoadTransactions()
+    {
+        var list = await _database.GetTransactionsAsync();
+        transactions.Clear();
+        balance = 0;
+
+        foreach (var t in list)
         {
-            InitializeComponent();
-            TransactionsView.ItemsSource = transactions;
-            UpdateBalanceDisplay();
+            transactions.Add(t);
+            balance += t.Amount;
         }
 
-        private void OnAddIncomeClicked(object sender, EventArgs e)
-        {
-            AddTransaction("Income", 100);
-        }
+        UpdateBalanceDisplay();
+    }
 
-        private void OnAddExpenseClicked(object sender, EventArgs e)
+    private async void OnAddIncomeClicked(object sender, EventArgs e)
+    {
+        string amountStr = await DisplayPromptAsync("Add Income", "Enter amount:", "OK", "Cancel", keyboard: Keyboard.Numeric);
+        if (decimal.TryParse(amountStr, out decimal amount) && amount > 0)
         {
-            AddTransaction("Expense", -50);
-        }
-
-        private void AddTransaction(string description, decimal amount)
-        {
-            transactions.Insert(0, new Transaction { Description = description, Amount = amount });
-            balance += amount;
-            UpdateBalanceDisplay();
-        }
-
-        private void UpdateBalanceDisplay()
-        {
-            BalanceLabel.Text = $"${balance:F2}";
+            var t = new Transactions { Description = "Income", Amount = amount };
+            await _database.SaveTransactionAsync(t);
+            await LoadTransactions();
         }
     }
 
-    public class Transaction
+    private async void OnAddExpenseClicked(object sender, EventArgs e)
     {
-        public string Description { get; set; }
-        public decimal Amount { get; set; }
+        string amountStr = await DisplayPromptAsync("Add Expense", "Enter amount:", "OK", "Cancel", keyboard: Keyboard.Numeric);
+        if (decimal.TryParse(amountStr, out decimal amount) && amount > 0)
+        {
+            var t = new Transactions { Description = "Expense", Amount = -amount };
+            await _database.SaveTransactionAsync(t);
+            await LoadTransactions();
+        }
+    }
+
+    private void UpdateBalanceDisplay()
+    {
+        BalanceLabel.Text = $"${balance:F2}";
     }
 }
