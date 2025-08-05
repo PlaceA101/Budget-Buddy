@@ -10,6 +10,10 @@ public static class MauiProgram
             .UseMauiApp<App>();
 
         string dbPath = Path.Combine(FileSystem.AppDataDirectory, "transactions.db3");
+
+        //if (File.Exists(dbPath))
+        //    File.Delete(dbPath);
+
         builder.Services.AddSingleton(new TransactionDatabase(dbPath));
 
         return builder.Build();

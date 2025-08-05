@@ -27,10 +27,16 @@
         <CollectionView x:Name="TransactionsView" HeightRequest="200">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Orientation="Horizontal" Padding="10" Spacing="10">
-                        <Label Text="{Binding Description}" FontSize="16" HorizontalOptions="StartAndExpand"/>
-                        <Label Text="{Binding Amount}" FontSize="16" HorizontalOptions="End"/>
-                    </StackLayout>
+                    <Grid Padding="10" ColumnDefinitions="Auto,*,Auto" RowDefinitions="Auto">
+                        <!-- Category on the left -->
+                        <Label Grid.Column="0" Text="{Binding Category}" FontSize="16" VerticalOptions="Center" />
+
+                        <!-- Note in the middle, centered in its column -->
+                        <Label Grid.Column="1" Text="{Binding Note}" FontSize="14" TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center" LineBreakMode="TailTruncation" IsVisible="{Binding Note, Converter={StaticResource StringNotNullOrEmptyConverter}}" />
+
+                        <!-- Amount on the right -->
+                        <Label Grid.Column="2" Text="{Binding Amount, StringFormat='{}{0:C}'}" FontSize="16" HorizontalOptions="End" VerticalOptions="Center" />
+                    </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
