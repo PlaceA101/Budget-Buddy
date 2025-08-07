@@ -60,4 +60,9 @@ public partial class MainPage : ContentPage
     {
         BalanceLabel.Text = $"${balance:F2}";
     }
+
+    private async void SpendingBtn_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(Spending));
+    }
 }

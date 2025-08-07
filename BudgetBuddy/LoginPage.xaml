@@ -3,16 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BudgetBuddy.LoginPage"
              NavigationPage.HasNavigationBar="False"
-             Title="LoginPage">
+             Title="LoginPage"
+             BackgroundColor="#c3d9bf">
     <VerticalStackLayout Padding="30" Spacing="20">
 
-        <Label Text="BudgetBuddy" FontSize="32" HorizontalOptions="Center" FontAttributes="Bold" />
+        <Label Text="BudgetBuddy" FontSize="32" HorizontalOptions="Center" TextColor="#49393b" FontAttributes="Bold" />
 
-        <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" />
-        <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />
+        <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" TextColor="#4b644a"/>
+        <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" TextColor="#4b644a" />
 
-        <Button Text="Log In" Clicked="OnLoginClicked" />
-        <Button Text="Create Account" Clicked="OnCreateAccountClicked" />
+        <Button Text="Log In" BackgroundColor="#49393b" TextColor="#c3d9bf" Clicked="OnLoginClicked" />
+        <Button Text="Create Account" BackgroundColor="#49393b" TextColor="#c3d9bf" Clicked="OnCreateAccountClicked" />
 
         <Label x:Name="ErrorLabel" TextColor="Red" IsVisible="False" />
 

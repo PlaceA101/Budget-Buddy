@@ -4,30 +4,38 @@
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Add Transaction"
-    BackgroundColor="White">
+            BackgroundColor="#b5d9bf">
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
 
             <!-- Type toggle -->
             <HorizontalStackLayout>
-                <Button x:Name="IncomeBtn" Text="Income" Clicked="OnTypeClicked" />
-                <Button x:Name="ExpenseBtn" Text="Expense" Clicked="OnTypeClicked" />
+                <Button x:Name="IncomeBtn" Text="Income" Clicked="OnTypeClicked" 
+                    BackgroundColor="#49393b"
+                    TextColor="#b5d9bf" />
+                <Button x:Name="ExpenseBtn" Text="Expense" Clicked="OnTypeClicked"  
+                    BackgroundColor="#49393b"
+                    TextColor="#b5d9bf"/>
             </HorizontalStackLayout>
 
-            <Entry x:Name="AmountEntry" Placeholder="Amount" Keyboard="Numeric" />
+            <Entry x:Name="AmountEntry" Placeholder="Amount" Keyboard="Numeric" TextColor="#4b644a" FontSize="15" />
 
-            <Picker x:Name="CategoryPicker" Title="Category">
+            <Picker x:Name="CategoryPicker" Title="Category" TextColor="#4b644a">
             </Picker>
 
-            <DatePicker x:Name="DatePicker" />
+            <DatePicker x:Name="DatePicker" TextColor="#4b644a"/>
 
             <Editor x:Name="NoteEditor"
               Placeholder="Note (optional)"
               AutoSize="TextChanges"
-              HeightRequest="80" />
+              HeightRequest="80" 
+              TextColor="#4b644a"
+              FontSize="15"/>
 
-            <Button Text="Save" Clicked="OnSaveClicked"/>
+            <Button Text="Save" Clicked="OnSaveClicked" 
+                BackgroundColor="#49393b"
+                TextColor="#b5d9bf"/>
             <Label x:Name="ErrorLabel" TextColor="Red" IsVisible="False"/>
 
         </VerticalStackLayout>
