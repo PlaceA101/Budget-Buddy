@@ -1,15 +1,20 @@
-﻿namespace BudgetBuddy
+﻿using BudgetBuddy.Services;
+namespace BudgetBuddy
 {
     public partial class App : Application
     {
-        public App()
+        private readonly TransactionDatabase _database;
+        public App(TransactionDatabase database)
         {
             InitializeComponent();
+            _database = database;
+
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            var nav = new NavigationPage(new LoginPage(_database));
+            return new Window(nav);
         }
     }
 }

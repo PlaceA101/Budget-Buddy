@@ -27,7 +27,11 @@ public partial class MainPage : ContentPage
 
     private async Task LoadTransactions()
     {
-        var list = await _database.GetTransactionsAsync();
+        int currentUserId = Preferences.Default.Get("CurrentUserId", 0);
+        if (currentUserId == 0)
+            return; // or prompt to log in
+
+        var list = await _database.GetTransactionsForUserAsync(currentUserId);
         transactions.Clear();
         balance = 0;
 
@@ -42,28 +46,23 @@ public partial class MainPage : ContentPage
 
     private async void OnAddIncomeClicked(object sender, EventArgs e)
     {
-        string amountStr = await DisplayPromptAsync("Add Income", "Enter amount:", "OK", "Cancel", keyboard: Keyboard.Numeric);
-        if (decimal.TryParse(amountStr, out decimal amount) && amount > 0)
-        {
-            var t = new Transactions { Description = "Income", Amount = amount };
-            await _database.SaveTransactionAsync(t);
-            await LoadTransactions();
-        }
+        await Shell.Current.GoToAsync("transaction?mode=Income");
+
     }
 
     private async void OnAddExpenseClicked(object sender, EventArgs e)
     {
-        string amountStr = await DisplayPromptAsync("Add Expense", "Enter amount:", "OK", "Cancel", keyboard: Keyboard.Numeric);
-        if (decimal.TryParse(amountStr, out decimal amount) && amount > 0)
-        {
-            var t = new Transactions { Description = "Expense", Amount = -amount };
-            await _database.SaveTransactionAsync(t);
-            await LoadTransactions();
-        }
+        await Shell.Current.GoToAsync("transaction?mode=Expense");
+
     }
 
     private void UpdateBalanceDisplay()
     {
         BalanceLabel.Text = $"${balance:F2}";
+    }
+
+    private async void SpendingBtn_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(Spending));
     }
 }

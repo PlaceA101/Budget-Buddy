@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="BudgetBuddy.Spending"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            Title="Spending"
+             BackgroundColor="#b5d9bf">
+
+    <VerticalStackLayout Padding="20">
+
+        <Label Text="Your Spending"
+               FontSize="25"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="#4b644a"/>
+
+        <Frame Padding="10" Margin="5" >
+            <VerticalStackLayout>
+                 <VerticalStackLayout>
+                <Label x:Name="IncomeLabel"
+                       FontSize="20"/>
+                       <Label x:Name="Salary"/>
+                       <Label x:Name="Bonus"/>
+                       <Label x:Name="Investment"/>
+                       <Label x:Name="Gift"/>
+                       <Label x:Name="Other"/>
+
+                <Label x:Name="SpendingLabel"
+                       FontSize="20"/>
+                       <Label x:Name="Food"/>
+                       <Label x:Name="Rent"/>
+                       <Label x:Name="Transport"/>
+                       <Label x:Name="Health"/>
+                       <Label x:Name="Entertainment"/>
+
+                <Label x:Name="BalanceLabel"
+                       FontSize="20"
+                       FontAttributes="Bold" /> 
+                       
+                     </VerticalStackLayout>
+            </VerticalStackLayout>
+        </Frame>
+
+
+    </VerticalStackLayout>
+
+</ContentPage>
