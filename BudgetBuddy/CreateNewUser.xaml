@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BudgetBuddy.CreateNewUser"
+             Title="Create a New User"
+             BackgroundColor="#c3d4bf">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+            <Label
+                Text="Create a new user"
+                FontSize=" 30"
+                TextColor="#49393b"
+                FontAttributes="Bold"/>
+
+            <Entry x:Name="NameEntry" Placeholder="Enter your name"
+                   FontSize=" 20"
+                   TextColor="#4b644a"/>
+            <Entry x:Name="EmailEntry" Placeholder="Enter your email"
+                    FontSize=" 20"
+                    TextColor="#4b644a"/>
+            <Entry x:Name="PassEntry" Placeholder="Create a password"
+                    FontSize=" 20"
+                    TextColor="#4b644a"
+                   IsPassword="True"/>
+            
+           
+            <Button
+                x:Name="SubBtn"
+                Text="Submit" 
+                Clicked="SubBtnClicked"
+                HorizontalOptions="Fill" 
+                BackgroundColor="#49393b"
+                TextColor="#c3d4bf"
+                FontSize="20"/>
+
+            <Label x:Name="Welcome"
+                   TextColor="#49393b"
+                   FontSize="25"/>
+            <Label x:Name="NameLabel" 
+                   TextColor="#4b644a"
+                   FontSize="20"/>
+            <Label x:Name="EmailLabel" 
+                   TextColor="#4b644a"
+                   FontSize="20"/>
+            <Button 
+                x:Name ="StartBtn"
+                Text="Get Started" 
+                    IsVisible="False"
+                    WidthRequest="150"
+                    BackgroundColor="#49393b"
+                    TextColor="#c3d4bf"
+                Clicked="StartBtn_Clicked"/>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
