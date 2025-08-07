@@ -1,1 +1,52 @@
-yes
+Budget Buddy
+Project Goals
+Budget Buddy is a simple and intuitive budgeting application built with .NET MAUI to help users manage their personal finances. The app enables users to track their transactions, view their current balance, and store data persistently using SQLite. The primary goal of Budget Buddy is to provide an easy-to-use tool for managing budgets on mobile devices, making financial tracking accessible to everyone.
+
+Features
+Add new transactions with a user-defined amount and description.
+
+View a list of all past transactions.
+
+Track your balance in real-time.
+
+Persistent storage of transaction history using SQLite.
+
+Instructions for Building and Running the Application
+Prerequisites
+Before building Budget Buddy, ensure you have the following installed:
+
+.NET 8 SDK
+
+Visual Studio 2022 (with .NET MAUI workload installed)
+
+SQLite NuGet package
+
+Steps to Build and Run
+Clone the repository
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/budget-buddy.git
+cd budget-buddy
+Open the project
+
+Launch Visual Studio 2022.
+
+Open the .sln file for Budget Buddy.
+
+Install NuGet packages
+
+Go to Tools → NuGet Package Manager → Manage NuGet Packages for Solution.
+
+Install:
+
+sqlite-net-pcl
+
+CommunityToolkit.Mvvm
+
+Run the app
+
+Select a target platform (Android, iOS, or Windows).
+
+Press F5 to build and run the application.
