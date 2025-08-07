@@ -1414,3 +1414,14 @@ C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\obj\Debug\net9
 C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microcharts.Maui.dll
+C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SkiaSharp.dll
+C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.WinUI.Native.Projection.dll
+C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.Maui.Controls.dll
+C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.Maui.Core.dll
+C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.Windows.dll
+C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\libSkiaSharp.dll
+C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.WinUI.Native.dll
+C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.WinUI.Native.winmd
+C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\libEGL.dll
+C:\Users\Kayla\OneDrive\Documents\GitHub\Budget-Buddy\BudgetBuddy\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\libGLESv2.dll

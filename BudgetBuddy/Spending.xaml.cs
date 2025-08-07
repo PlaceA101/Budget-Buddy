@@ -1,6 +1,8 @@
 using System.Transactions;
 using __XamlGeneratedCode__;
 using BudgetBuddy.Services;
+using Microcharts;
+using SkiaSharp;
 
 namespace BudgetBuddy;
 
@@ -35,13 +37,15 @@ public partial class Spending : ContentPage
 
         decimal totalSpending = transactions
         .Where(t => t.Type == "Spending")
-        .Sum(t => t.Amount * -1);
+        .Sum(t => t.Amount);
 
         decimal balance = totalIncome - totalSpending;
 
         IncomeLabel.Text = $"Total Income: {totalIncome:C}";
         SpendingLabel.Text = $"Total Spendings: {totalSpending: C}";
         BalanceLabel.Text = $"Remaining Balance: {balance: C}";
+
+        
         
         
     }
