@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="budgetBuddy.Login"
+             Title="Welcome to BudgetBuddy"
+             BackgroundColor="#c3d9bf">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label Text="Enter your log in information"
+                   FontSize="40"
+                   TextColor="#49393b"/>
+            <Label Text="Email: "
+                   TextColor="#4b644a"
+                   FontSize="25"/>
+            <Entry x:Name="emailEntry"
+                   FontSize="20"
+                   TextColor="#49393b"/>
+            <Label Text="Password: "
+                   TextColor="#4b644a"
+                    FontSize="25"/>
+            <Entry x:Name="passEntry" 
+                   TextColor="#49393b"
+                   FontSize="20"
+                   IsPassword="True"/>
+
+
+            <Button Text="Login"
+                    BackgroundColor="#49393b"
+                    TextColor="#c3d9bf"
+                    FontSize="20" 
+                    Clicked="LoginBtnClicked"/>
+
+            <Button Text="Create Account"
+                    BackgroundColor="#49393b"
+                    TextColor="#c3d9bf"
+                    FontSize="20"
+                    Clicked="CreateBtnClicked"/>
+            
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+
+</ContentPage>
